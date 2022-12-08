@@ -9,11 +9,3 @@ const redis = new Redis({
     port: 12347,
     password: 'sjbtZdD8Jo3mZ1SwEhSb1JWqKuuVSfuF',
 });
-
-
-redis.ping().then(function(e) {
-            console.log('Connected!');
-        })
-        .catch(function(e) {
-            console.log('Error:', e);
-        });

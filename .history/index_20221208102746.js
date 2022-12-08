@@ -10,10 +10,3 @@ const redis = new Redis({
     password: 'sjbtZdD8Jo3mZ1SwEhSb1JWqKuuVSfuF',
 });
 
-
-redis.ping().then(function(e) {
-            console.log('Connected!');
-        })
-        .catch(function(e) {
-            console.log('Error:', e);
-        });

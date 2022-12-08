@@ -17,3 +17,6 @@ redis.ping().then(function(e) {
         .catch(function(e) {
             console.log('Error:', e);
         });
+
+
+redis.set("mykey6", "value");

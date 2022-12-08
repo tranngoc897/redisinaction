@@ -11,7 +11,9 @@ const redis = new Redis({
 });
 
 
-redis.ping().then(function(e) {
+redis.ping()
+.then(function(e) {
+            console.log(redis);
             console.log('Connected!');
         })
         .catch(function(e) {
